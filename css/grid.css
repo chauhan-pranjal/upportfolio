@@ -1,0 +1,88 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 85%;
+  overflow: hidden;
+}
+
+.grid_c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+  position: relative;
+  overflow: hidden;
+}
+
+.title5 {
+  position: absolute;
+  top: 70%;
+  left: 1rem;
+  margin: 0;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.box1 img,
+.box2 img,
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img,
+.box7 img,
+.box8 img {
+  opacity: 0.2;
+  transition: opacity 200ms;
+  overflow: hidden;
+}
+.box1 img:hover,
+.box2 img:hover,
+.box3 img:hover,
+.box4 img:hover,
+.box5 img:hover,
+.box6 img:hover,
+.box7 img:hover,
+.box8 img:hover {
+  opacity: 1;
+}
+.title5 p {
+  font-size: 0.5em;
+  margin: 0;
+  font-weight: 100;
+}
+@media (max-width: 1010px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+  }
+  .title5 {
+    font-size: 2rem;
+  }
+}

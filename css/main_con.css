@@ -1,0 +1,153 @@
+.con_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  text-align: justify;
+}
+
+.conter {
+  display: flex;
+  width: 100%;
+  height: 47em;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.animated-heading #words {
+  font-weight: bold;
+  color: #02ccff;
+}
+
+.left {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+}
+
+.wel {
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+}
+.h_main {
+  font-size: 4.6rem;
+  margin: 0;
+  margin-top: 1.4rem;
+  line-height: 7rem;
+}
+
+.sub {
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: none;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-top: 1.7rem;
+  color: white;
+  font-size: 20px;
+  transition: background 200ms, color 200ms, border 200ms;
+}
+.sub a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.sub:hover {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+.sub a:hover {
+  color: #000;
+}
+.animated-heading h1 {
+  font-size: 1.7em;
+}
+.im_tg {
+  width: 40em;
+  padding-left: 10em;
+  overflow: hidden;
+}
+.right img {
+  border-radius: 21.9375em;
+}
+@media (max-width: 1010px) {
+  .conter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80em;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .im_tg {
+    width: 25em;
+    padding-left: 0%;
+    overflow: hidden;
+    margin-top: 5rem;
+  }
+  .right img {
+    border-radius: 10em 30em 30em 20em;
+  }
+  .animated-heading #words {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 500px) {
+  .conter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60em;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .left {
+    justify-content: center;
+    margin-left: 11rem;
+    overflow: hidden;
+  }
+  .h_main {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 1.4rem;
+    line-height: 5rem;
+  }
+
+  .sub {
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: none;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin-top: 1.7rem;
+    color: white;
+    font-size: 1em;
+    transition: background 200ms, color 200ms, border 200ms;
+  }
+  .wel {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .im_tg {
+    width: 20em;
+  }
+  .animated-heading h1 {
+    font-size: 1.3em;
+  }
+  .animated-heading #words {
+    font-weight: bold;
+  }
+}

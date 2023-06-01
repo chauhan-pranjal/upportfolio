@@ -1,0 +1,10 @@
+.sub1 {
+  width: 85%;
+  height: 32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mapouter iframe {
+  width: 28rem;
+}
